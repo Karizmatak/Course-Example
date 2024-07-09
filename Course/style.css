@@ -1,0 +1,270 @@
+body{
+  margin: 0;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.img{
+  width: 175px;
+  height: 50px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+.firstContainer{
+  background-color: rgba(255, 189, 89, 0.97);
+  font-family: sans-serif;
+  display: block;
+  box-sizing: border-box;
+  height: 80px;
+}
+
+.header{
+  margin-right: 17%;
+  margin-left: 17%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.moreCourses{
+  padding: 16px;
+  cursor: pointer;
+}
+
+.moreCourses:hover{
+  padding: 16px;
+  background-color: orange;
+}
+
+.login{
+  padding: 16px;
+  cursor: pointer;
+}
+
+.login:hover{
+  padding: 16px;
+  background-color: orange;
+}
+
+.secondContainer{
+  background-color: rgb(240, 240, 240);
+  height: 750px;
+}
+
+.big-header{
+  margin-right: 16%;
+  margin-left: 16%;
+}
+
+.pink{
+  color: rgb(170, 129, 243)
+}
+
+.best-course{
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-top: 60px;
+  flex-direction: column;
+  display: flex;
+  font-size: 90px;
+}
+
+.main-button-gradient{
+  position: relative;
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, rgb(170, 129, 243) 40%, rgb(0, 183, 255) 100%);
+  margin-top: 30px;
+}
+
+::-moz-selection{
+  background:#8b4bda;
+  color:#fff;
+}
+
+::selection {
+  background:#8b4bda;
+  color:#fff;
+}
+
+.black{
+  color: black;
+}
+
+.main-button-text{
+  color: rgb(159, 159, 159);
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  width: 600px;
+  padding-bottom: 20px;
+}
+
+.main-button-text2{
+  color: rgb(159, 159, 159);
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  width: 700px;
+}
+
+.thirdContainer{
+  justify-content: center;
+  height: 400px;
+}
+
+.graduates{
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 70%;
+  padding-top: 36px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.log{
+  width: 75px;
+  height: 75px;
+  display: flex;
+  padding: 40px 110px;
+  float: left;
+  margin-left: 19%;
+  font-size: 24px;
+}
+
+.log2{
+  font-size: 24px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  padding: 40px 110px;
+  float: left;
+}
+
+.log3{
+  font-size: 24px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  padding: 40px 110px;
+  float: left;
+  margin-right: 15%;
+}
+
+.fourthContainer{
+  height: 600px;
+  background-color: rgb(240, 240, 240);
+}
+
+.rated{
+  justify-content: center;
+  text-align: center;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-top: 70px;
+}
+
+.ourCourses{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 1200px;
+  height: 500px;
+}
+.menu{
+  margin-left: 80px;
+  width: 300px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.icon{
+  margin-bottom: 20px;
+  padding: 20px 100px;
+  text-align:center;
+  background-color: white;
+  border-radius: 4px;
+  border: 3px solid rgb(170, 129, 243);
+  cursor: pointer;
+}
+
+.aboutCourse{
+  background-color: #ffffff;
+  width: 900px;
+  height: 330px;
+  position: absolute;
+  margin-left: 550px;
+  border-radius: 24px;
+}
+
+.python-image{
+  height: 330px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  position: absolute;
+}
+
+.header-about{
+  position: absolute;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 36%;
+}
+
+.header-guide{
+  position: absolute;
+  font-size: 15px;
+  width: 500px;
+  font-family: sans-serif;
+  margin-top: 90px;
+  margin-left: 36%;
+  line-height: 24px;
+}
+
+.header-info{
+  position: absolute;
+  display: flex;
+  font-size: 15px;
+  width: 500px;
+  font-family: sans-serif;
+  margin-top: 200px;
+  margin-left: 36%;
+  line-height: 24px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.get-course{
+  position: absolute;
+  display: flex;
+  font-size: 15px;
+  width: 500px;
+  font-family: sans-serif;
+  margin-top: 250px;
+  margin-left: 36%;
+  line-height: 24px;
+  justify-content: space-between;
+  color: rgb(170, 129, 243);
+}
