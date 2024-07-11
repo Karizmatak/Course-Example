@@ -124,7 +124,7 @@ body{
 
 .thirdContainer{
   justify-content: center;
-  height: 400px;
+  height: 350px;
 }
 
 .graduates{
@@ -216,6 +216,10 @@ body{
   position: absolute;
   margin-left: 550px;
   border-radius: 24px;
+  display: none;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 
 .python-image{
@@ -267,4 +271,181 @@ body{
   line-height: 24px;
   justify-content: space-between;
   color: rgb(170, 129, 243);
+}
+
+.aboutCourse.active-tab {
+  display: block;
+  animation: slideIn 0.5s forwards; /* Apply slideIn animation when active */
+}
+
+.pink2{
+  color: rgb(170, 129, 243);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fifthContainer{
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.fifth-text{
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+.left-container{
+  display: flex;
+  width: 300px;
+  height: 150px;
+  margin-top: 80px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(252, 252, 252);
+  border-radius: 16px;
+  padding: 30px;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-top: 1px;
+  margin-left: 20%;
+}
+
+.left-text{
+  margin-top: 1px;
+  font-size: 16px;
+  font-style: italic;
+  font-family: sans-serif;
+  line-height: 24px;
+}
+
+.left-h4{
+  font-size: 20px;
+  font-family: sans-serif;
+  width: 160px;
+  height: 0px;
+}
+
+.left-account{
+  margin-top: 1px;
+  display: flex;
+}
+
+.middle-container{
+  display: flex;
+  width: 300px;
+  height: 200px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(252, 252, 252);
+  border-radius: 16px;
+  padding: 30px;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.middle-text{
+  margin-top: 1px;
+  font-size: 16px;
+  font-style: italic;
+  font-family: sans-serif;
+  line-height: 24px;
+}
+
+.middle-h4{
+  font-size: 20px;
+  font-family: sans-serif;
+  width: 200px;
+  height: 0px;
+}
+
+.middle-account{
+  margin-top: 1px;
+  display: flex;
+}
+
+.right-container{
+  display: flex;
+  width: 300px;
+  height: 150px;
+  margin-top: 80px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(252, 252, 252);
+  border-radius: 16px;
+  padding: 30px;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-top: 1px;
+}
+
+.right-text{
+  margin-top: 1px;
+  font-size: 16px;
+  font-style: italic;
+  font-family: sans-serif;
+  line-height: 24px;
+}
+
+.right-h4{
+  font-size: 20px;
+  font-family: sans-serif;
+  width: 160px;
+  height: 0px;
+}
+
+.right-account{
+  margin-top: 1px;
+  display: flex;
+}
+
+.lastContainer{
+  height: 200px;
+  background-color: rgba(255, 189, 89, 0.97);
+}
+
+.app-brewery{
+  padding-top: 40px;
+  font-family: sans-serif;
+  font-style: italic;
+  margin-left: 45%;
+  color: rgb(74, 74, 74);
+  font-size: 14px;
+}
+
+.terms{
+  font-family: sans-serif;
+  font-style: italic;
+  margin-left: 46%;
+  color: white;
+  font-size: 14px;
+}
+
+.privacy{
+  font-family: sans-serif;
+  font-style: italic;
+  margin-left: 46%;
+  color: white;
+  font-size: 14px;
+}
+
+i{
+  font-family: sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 14px;
+}
+.images{
+  margin-left: 47%;
 }

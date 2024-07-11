@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Course</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   
@@ -48,41 +49,69 @@
   <div class="fourthContainer">
     <div class="ourCourses">
       <p class="rated"><strong class="pink">Top Rated</strong> Courses</p>
-      <div class="aboutCourse">
+      <div class="aboutCourse active-tab" id="pythonCourse">
         <img src="https://www.filepicker.io/api/file/QDRpHHpsSxqYKWCkppJO" class="python-image">
         <p class="header-about">100 Days of Python Coding Bootcamp</p>
         <p class="header-guide">Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps! We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a Python developer.</p>
         <p class="header-info">60+ Hours | 100 Days | 100 Projects</p>
         <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=LETSLEARNNOWPP" class="get-course">Get the Course</p></a>
       </div>
-      <div class="aboutCourse">
+      <div class="aboutCourse" id="WebCourse">
         <img src="https://www.filepicker.io/api/file/QglY5ZveTmWXHq4ooNv4" class="python-image">
         <p class="header-about">Complete Web Development Bootcamp</p>
         <p class="header-guide">Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps. We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a web developer.</p>
         <p class="header-info">65 Hours |  12 Weeks |  16 Projects</p>
         <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?referralCode=F2958B9D9447BDFC8244&couponCode=LETSLEARNNOWPP" class="get-course">Get the Course</p></a>
       </div>
-      <div class="aboutCourse">
-        <img src="https://www.filepicker.io/api/file/QDRpHHpsSxqYKWCkppJO" class="python-image">
-        <p class="header-about">100 Days of Python Coding Bootcamp</p>
-        <p class="header-guide">Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps! We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a Python developer.</p>
-        <p class="header-info">60+ Hours | 100 Days | 100 Projects</p>
-        <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=LETSLEARNNOWPP" class="get-course">Get the Course</p></a>
+      <div class="aboutCourse" id="iosCourse">
+        <img src="https://www.filepicker.io/api/file/1yMk5GARBm6ioHAbg0bW" class="python-image">
+        <p class="header-about">iOS Development Bootcamp</p>
+        <p class="header-guide">From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!By the end of this course, you will be fluently programming in Swift 5.1 and be ready to make your own apps or start a freelancing job as an iOS 13 developer.</p>
+        <p class="header-info">59 Hours | 12 Weeks | 15 Apps</p>
+        <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/?referralCode=D3530B180A3ECABC6056&couponCode=LETSLEARNNOWPP" class="get-course">Get the Course</p></a>
       </div>
-      <div class="aboutCourse">
-        <img src="https://www.filepicker.io/api/file/QDRpHHpsSxqYKWCkppJO" class="python-image">
-        <p class="header-about">100 Days of Python Coding Bootcamp</p>
-        <p class="header-guide">Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps! We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a Python developer.</p>
-        <p class="header-info">60+ Hours | 100 Days | 100 Projects</p>
-        <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=LETSLEARNNOWPP" class="get-course">Get the Course</p></a>
+      <div class="aboutCourse" id="flutterCourse">
+        <img src="https://www.filepicker.io/api/file/sICkPl6pTAi1LclTnk3C" class="python-image">
+        <p class="header-about">Flutter Crossplatform Development</p>
+        <p class="header-guide">Officially created in collaboration with the Google Flutter team.We built this course over months, perfecting the curriculum together with the Flutter team to teach you Flutter from scratch and make you into  a skilled Flutter developer with a strong portfolio of beautiful Flutter apps.</p>
+        <p class="header-info">28 Hours | 4 Weeks | 8 Apps</p>
+        <a href="https://www.udemy.com/course/flutter-bootcamp-with-dart/?referralCode=2B7724A180C0502A2547&couponCode=LETSLEARNNOWPP" class="get-course">Get the Course</p></a>
       </div>
       <div class="menu">
-        <div id="python" class="icon"><strong class="pink">Python</strong></div>
-        <div id="Web" class="icon">Web</div>
-        <div id="iOS" class="icon">iOS</div>
-        <div id="Flutter" class="icon">Flutter</div>
+        <div id="python" class="icon active-link" onclick="openCourse('pythonCourse')"><strong class="pink2">Python</strong></div>
+        <div id="Web" class="icon" onclick="openCourse('WebCourse')">Web</div>
+        <div id="iOS" class="icon" onclick="openCourse('iosCourse')">iOS</div>
+        <div id="flutter" class="icon" onclick="openCourse('flutterCourse')">Flutter</div>
       </div>
     </div>  
+  </div>
+
+  <div class="fifthContainer">
+    <p class="fifth-text">See What Our <strong class="pink">Students</strong> Say</p>
+    <div class="left-container">
+      <p class="left-text">“Taught myself with the help of @yu_angela while delivering for Amazon! Then got hired by Amazon!”</p>
+      <h4 class="left-h4">Evan Templeton</h4>
+      <span class="left-account"><strong class="pink">@evans_telephone</strong></span>
+    </div>
+    <div class="middle-container">
+      <p class="middle-text">“a year and a half ago I started @yu_angela 's full stack course on udemy. This Monday I start a new job as a developer. More than thankful. I 💯% recommend the course !!!!!!!”</p>
+      <h4 class="middle-h4">Martin Chammah</h4>
+      <span class="middle-account"><strong class="pink">@CodigoMate</strong></span>
+    </div>
+    <div class="right-container">
+      <p class="right-text">“Angela also helped me to get my first iOS job 2 years ago! Thanks @yu_angela 😍”</p>
+      <h4 class="right-h4">Cosmin Anghel</h4>
+      <span class="right-account"><strong class="pink">@cosmin_codes</strong></span>
+    </div>
+  </div>
+
+  <div class="lastContainer">
+    <p class="app-brewery">© The App Brewery</p>
+    <p class="terms">Terms of Use</p>
+    <p class="privacy">Privacy Policy</p>
+    <div class="images">
+      <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin-in"></i>
+    </div>
   </div>
 
   <script src="script.js"></script>
